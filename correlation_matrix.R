@@ -1,0 +1,6 @@
+data<- read.csv("E:/dataset/CRM/zomato_dataset.csv")
+View(data)
+Corr<-cor(data)
+head(round(data,2))
+corrplot(Corr, method="circle")
+corrplot(Corr, method="number")
